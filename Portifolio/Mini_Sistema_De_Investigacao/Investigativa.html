@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classificação de Participação em Crime</title>
+    <link rel="stylesheet" href="Investigativa.css">
+    <script src="Investigativa.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <img class="imagem-Cabecalho" src="media/cabecalho.jpg" alt="" />
+    </header>
+
+    <main>
+      <img
+        class="logo"
+        src="media/logoInvestigativa.webp"
+        alt="Imagem representativa do interrogatório"
+      />
+
+      <section id="inicio">
+        <button class="button" onclick="iniciarInterrogatorio()">
+          Iniciar Interrogatório
+        </button>
+      </section>
+
+      <section id="interrogatorio" style="display: none">
+        <div id="alerta"></div>
+        <p id="pergunta" aria-live="polite"></p>
+        <button class="button" onclick="responder('sim')">Sim</button>
+        <button class="button" onclick="responder('nao')">Não</button>
+      </section>
+
+      <section id="resultado" aria-live="polite"></section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Sistema de Classificação de Crimes</p>
+    </footer>
+
+  </body>
+</html>

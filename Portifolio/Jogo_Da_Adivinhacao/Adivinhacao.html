@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="Adivinhacao.css" />
+  </head>
+
+  <body>
+    <div class="Jogo">
+      <h1>Jogo de Adivinhação</h1>
+      <p id="nivel-text">Escolha um nível de dificuldade:</p>
+      <select id="nivel">
+        <option value="15">Nível 1 - 15 tentativas</option>
+        <option value="10">Nível 2 - 10 tentativas</option>
+        <option value="5">Nível 3 - 5 tentativas</option>
+      </select>
+      <button id="iniciar">Iniciar</button>
+
+      <div id="jogo" style="display: none">
+        <p>Tempo restante: <span id="timer">60</span> segundos</p>
+        <p>Digite um número entre 1 e 100:</p>
+        <input
+          type="num"
+          id="numero"
+          min="1"
+          max="100"
+          placeholder="Seu palpite"
+        />
+        <button id="submit">Tentar</button>
+        <p class="mensagem" id="feedback"></p>
+      </div>
+    </div>
+
+    <script src="Adivinhacao.js"></script>
+  </body>
+</html>

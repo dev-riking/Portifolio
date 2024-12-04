@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Reservas de Assentos</title>
+  <link rel="stylesheet" href="Cinema.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Sistema de Reservas de Assentos</h1>
+
+    <div class="form">
+      <label for="data">Data:</label>
+      <input type="date" id="data" onchange="atualizarHorarios()">
+
+      <label for="filme">Filme:</label>
+      <div class="filme-card-container">
+        <div class="filme-card" id="filme1" onclick="selecionarFilme('filme1')"><img class="imagemCatalogo" src="medias/Avatar.webp" alt="">Avatar 2</div>
+        <div class="filme-card" id="filme2" onclick="selecionarFilme('filme2')"><img class="imagemCatalogo" src="medias/Maquinas_Mortais.webp" alt="">Maquinas Mortais</div>
+        <div class="filme-card" id="filme3" onclick="selecionarFilme('filme3')"><img class="imagemCatalogo" src="medias/Wicked.webp" alt="">Wicked</div>
+      </div>
+
+      <div id="horarios-container" style="display:none;"></div>
+
+      <label for="sala">Sala:</label>
+      <select id="sala">
+        <option value="tradicional">Tradicional (70 assentos)</option>
+        <option value="vip">VIP (35 assentos)</option>
+      </select>
+      <button onclick="exibirAssentos()">Ver Sessões</button>
+    </div>
+
+    <div id="assentos-container" style="display:none;">
+      <h2>Sessão selecionada: <span id="sessao-info"></span></h2>
+      <div id="assentos"></div>
+      <button onclick="finalizarReserva()">Finalizar Reserva</button>
+    </div>
+
+    <div id="resumo" style="display:none;">
+      <h2>Resumo da Reserva</h2>
+      <ul id="lista-assentos"></ul>
+      <button onclick="resetarSistema()">Nova Reserva</button>
+    </div>
+  </div>
+
+  <script src="Cinema.js"></script>
+</body>
+</html>
