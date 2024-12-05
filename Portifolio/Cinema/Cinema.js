@@ -1,17 +1,27 @@
-let reservas = {};
+let reservas = JSON.parse(localStorage.getItem('reservas')) || {};
 let assentosSelecionados = [];
 let horarioSelecionado = null;
 let tipoSala = 'tradicional';
 let filmeSelecionado = null;
+let assentosExibidos = false;  // Variável para controlar a exibição de assentos
 
 const salas = { tradicional: 70, vip: 35 };
 
-// Horários para os filmes
 const horariosFilmes = {
     filme1: ["18:00", "19:30", "21:30"],
     filme2: ["18:30", "20:30", "22:00"],
     filme3: ["18:00", "19:30", "21:45"]
 };
+
+function salvarReservas() {
+    localStorage.setItem('reservas', JSON.stringify(reservas));
+}
+
+// Função para formatar a data no formato dd/mm/aaaa
+function formatarDataPtBr(dataIso) {
+    const [ano, mes, dia] = dataIso.split('-');
+    return `${dia}/${mes}/${ano}`;
+}
 
 function selecionarFilme(filme) {
     filmeSelecionado = filme;
@@ -19,6 +29,11 @@ function selecionarFilme(filme) {
     cards.forEach(card => card.classList.remove('selecionado'));
     document.getElementById(filme).classList.add('selecionado');
     atualizarHorarios();
+    
+    // Limpa os assentos ao mudar de filme
+    assentosSelecionados = [];
+    const assentos = document.querySelectorAll('.assento');
+    assentos.forEach(assento => assento.classList.remove('selecionado', 'reservado'));
 }
 
 function atualizarHorarios() {
@@ -61,7 +76,7 @@ function exibirAssentos() {
     const assentosReservados = reservas[chaveReserva] || [];
 
     document.getElementById('sessao-info').innerText =
-        `Data: ${data}, Horário: ${horarioSelecionado}, Sala: ${tipoSala}`;
+        `Data: ${formatarDataPtBr(data)}, Horário: ${horarioSelecionado}, Sala: ${tipoSala}`;
 
     const assentosContainer = document.getElementById('assentos');
     assentosContainer.innerHTML = '';
@@ -77,7 +92,15 @@ function exibirAssentos() {
         assentosContainer.appendChild(assento);
     }
 
-    document.getElementById('assentos-container').style.display = 'block';
+    // Alterna a exibição dos assentos
+    if (assentosExibidos) {
+        document.getElementById('assentos-container').style.display = 'none';
+    } else {
+        document.getElementById('assentos-container').style.display = 'block';
+    }
+    
+    // Alterna o estado de assentos exibidos
+    assentosExibidos = !assentosExibidos;
 }
 
 function selecionarAssento(assentoId) {
@@ -106,6 +129,7 @@ function finalizarReserva() {
     }
 
     reservas[chaveReserva].push(...assentosSelecionados);
+    salvarReservas();
 
     exibirResumo();
 }
@@ -113,20 +137,36 @@ function finalizarReserva() {
 function exibirResumo() {
     const listaAssentos = document.getElementById('lista-assentos');
     listaAssentos.innerHTML = '';
+
     assentosSelecionados.forEach(assento => {
         const li = document.createElement('li');
         li.textContent = `Assento ${assento}`;
         listaAssentos.appendChild(li);
     });
 
-    document.getElementById('resumo').style.display = 'block';
+    const resumoContainer = document.getElementById('resumo');
+    resumoContainer.innerHTML = `
+        <h2>Resumo da Reserva</h2>
+        <p><strong>Data:</strong> ${formatarDataPtBr(document.getElementById('data').value)}</p>
+        <p><strong>Filme:</strong> ${document.querySelector('.filme-card.selecionado')?.textContent.trim()}</p>
+        <p><strong>Horário:</strong> ${horarioSelecionado}</p>
+        <p><strong>Sala:</strong> ${tipoSala === 'vip' ? 'VIP' : 'Tradicional'}</p>
+        <h3>Assentos Selecionados:</h3>
+        <ul id="lista-assentos">
+            ${assentosSelecionados.map(assento => `<li>Assento ${assento}</li>`).join('')}
+        </ul>
+        <button onclick="resetarSistema()">Nova Reserva</button>
+    `;
+
     document.getElementById('assentos-container').style.display = 'none';
+    resumoContainer.style.display = 'block';
 }
 
 function resetarSistema() {
     assentosSelecionados = [];
     filmeSelecionado = null;
     horarioSelecionado = null;
+    assentosExibidos = false;  // Resetando a variável para permitir reexibir os assentos
     document.getElementById('data').value = '';
     document.getElementById('horarios-container').style.display = 'none';
     document.getElementById('assentos-container').style.display = 'none';

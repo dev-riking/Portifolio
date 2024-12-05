@@ -136,6 +136,7 @@ button:hover {
     gap: 8px;
     margin-top: 20px;
     margin-bottom: 50px;
+    margin-left: 30px;
 }
 
 .assento {
@@ -189,6 +190,10 @@ button:hover {
     .filme-card {
         width: 120px;
         padding: 15px;
+    }
+
+    #assentos {
+        margin-left: 0px;
     }
 
     .assento {
