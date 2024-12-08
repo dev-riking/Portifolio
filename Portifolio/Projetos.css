@@ -1,5 +1,4 @@
-/* Reset básico */
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,11 +14,11 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-top: 80px; /* Dá espaço para o cabeçalho fixo */
+  padding-top: 80px; 
 }
 
 .main-header {
-  position: fixed; /* Fixa o cabeçalho no topo */
+  position: fixed;  
   top: 0;
   left: 0;
   width: 100%;
@@ -27,7 +26,7 @@ body {
   text-align: center;
   padding: 20px 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  z-index: 10; /* Garante que o cabeçalho fique sobre outros elementos */
+  z-index: 10;  
 }
 
 .main-header h1 {
@@ -70,7 +69,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #fff;
-  background-color: #007bff; /* Azul para o botão */
+  background-color: #007bff;  
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -78,13 +77,13 @@ body {
 }
 
 .button:hover {
-  background-color: #0056b3; /* Azul mais escuro no hover */
-  transform: scale(1.05); /* Leve aumento no hover */
+  background-color: #0056b3; 
+  transform: scale(1.05);  
 }
 
 .button:active {
-  background-color: #003d80; /* Cor mais escura no clique */
-  transform: scale(0.95); /* Leve redução ao clicar */
+  background-color: #003d80;
+  transform: scale(0.95); 
 }
 
 .projects {
@@ -95,7 +94,7 @@ body {
   flex-direction: column;
   gap: 90px;
   flex: 1;
-  padding-top: 120px; /* Espaçamento para não ficar por baixo do cabeçalho fixo */
+  padding-top: 120px;
 }
 
 .project {
@@ -143,6 +142,11 @@ body {
 
 .main-footer p {
   color: #888;
+}
+
+.icon-img {
+  width: 30px;
+  height: auto;
 }
 
 @media (max-width: 768px) {
