@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo de Pokémon</title>
+    <link rel="stylesheet" href="Cartas_Pokemon.css">
+  </head>
+
+  <body>
+    <h1>Jogo de Pokémon</h1>
+
+    <button id="mode-1v1">Jogar 1v1</button>
+
+    <button id="draw-pokemon" style="display: none">Puxar Carta</button>
+    <button id="start-battle" style="display: none">Iniciar Batalha</button>
+    <button id="restart-btn" style="display: none">Reiniciar Jogo</button>
+
+    <div id="battle-log"></div>
+
+    <div id="score-board">
+      <p>
+        Placar: Jogador 1 | <span id="player1-score">0</span> -
+        <span id="player2-score">0</span> | Jogador 2
+      </p>
+    </div>
+
+    <h3>Time do Jogador 1:</h3>
+    <div id="player1-deck" class="deck"></div>
+    <h3>Time do Jogador 2:</h3>
+    <div id="player2-deck" class="deck"></div>
+
+    <script src="Cartas_Pokemon.js"></script>
+  </body>
+</html>
