@@ -178,6 +178,7 @@ button:hover {
   height: auto;
 }
 
+
 @media (max-width: 768px) {
   .carrossel-container {
     margin: 20px;

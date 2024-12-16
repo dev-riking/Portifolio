@@ -23,3 +23,4 @@ function moveSlide(step) {
 setInterval(() => {
     moveSlide(1);  // Passa para o próximo slide
 }, 10000);
+
