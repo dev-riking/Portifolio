@@ -2,15 +2,15 @@
 
 🎓 **Apaixonado por tecnologia e aprendizado constante.**  
 🌟 **Desenvolvedor em várias áreas da tecnologia, com foco em sistemas embarcados, desenvolvimento web e design.**  
-🎮 **Criando jogos, simuladores e sistemas educacionais!**
+🎮 **Criando jogos, simuladores, sistemas educacionais e sistemas de gerenciamento!**
 
 ---
 
 ## 🚀 Sobre mim
 - 🌱 **Atualmente aprendendo:**
   - **C para sistemas embarcados**
-  - Melhorando habilidades em **Java e APIs web**
-- 📚 **Projetos práticoss individuais Javascipt:**
+  - Melhorando habilidades em **Java, Javascript, Python e APIs web**
+- 📚 **Projetos práticos individuais JavaScript:**
   - 🎥 **Sistema de Cinema:** Gerenciamento de reservas e horários.
   - 🎮 **Emulador de Jogos:** Experiência retrô com interface moderna.
 
@@ -30,7 +30,9 @@
 
 ### **Banco de Dados:**
 - ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+- ![MariaDB](https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white)
 - ![SQL](https://img.shields.io/badge/-SQL-000000?style=flat-square&logo=database&logoColor=white)
+- ![JSON](https://img.shields.io/badge/-JSON-000000?style=flat-square&logo=json&logoColor=white)
 
 ### **Design:**
 - ![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
@@ -51,5 +53,4 @@
 ---
 
 ✨ Explorando o futuro com tecnologia e criatividade! 🚀
-
 
