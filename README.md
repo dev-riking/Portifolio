@@ -1,4 +1,4 @@
-# Olá! 👋 Eu sou o Erik Bandeira (RIKING)
+# 👋 Olá! Eu sou o Erik Bandeira (RIKING)
 
 🎓 **Apaixonado por tecnologia e aprendizado constante.**  
 🌟 **Desenvolvedor em várias áreas da tecnologia, com foco em sistemas embarcados, desenvolvimento web e design.**  
@@ -19,24 +19,26 @@
 
 ## 🛠️ Tecnologias e Ferramentas
 
-### **Frontend e Backend:**
-- ![HTML](https://img.shields.io/badge/-HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-- ![CSS](https://img.shields.io/badge/-CSS-1572B6?style=flat-square&logo=css3&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) (Frontend & Backend)
-- ![API Web](https://img.shields.io/badge/-APIs-5c7e99?style=flat-square&logo=json&logoColor=white)
+### **Front-End e Back-End Linguagens:**
+- ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+- ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) (Frontend & Backend)
+- ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
+- ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+- ![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+- ![APIs](https://img.shields.io/badge/APIs-5c7e99?style=for-the-badge&logo=json&logoColor=white)
 
-### **Backend e Sistemas Embarcados:**
-- ![Java](https://img.shields.io/badge/-Java-007396?style=flat-square&logo=java&logoColor=white)
-- ![C](https://img.shields.io/badge/-C-A8B9CC?style=flat-square&logo=c&logoColor=white)
+### **Sistemas Embarcados:**
+- ![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=white)
 
 ### **Banco de Dados:**
-- ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
-- ![MariaDB](https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white)
-- ![SQL](https://img.shields.io/badge/-SQL-000000?style=flat-square&logo=database&logoColor=white)
-- ![JSON](https://img.shields.io/badge/-JSON-000000?style=flat-square&logo=json&logoColor=white)
+- ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+- ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+- ![SQL](https://img.shields.io/badge/SQL-000000?style=for-the-badge&logo=database&logoColor=white)
+- ![JSON](https://img.shields.io/badge/JSON-000000?style=for-the-badge&logo=json&logoColor=white)
 
 ### **Design:**
-- ![Figma](https://img.shields.io/badge/-Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
+- ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
 
 ---
 
@@ -47,11 +49,11 @@
 
 ---
 
-## 📫 Entre em contato comigo
+## 📣 Entre em contato comigo
 - 📧 **E-mail:** erikbandeira298@gmail.com
-- 💼 **LinkedIn:** www.linkedin.com/in/erik-bandeira-6aa355246
+- 💼 **LinkedIn:** [www.linkedin.com/in/erik-bandeira-6aa355246](www.linkedin.com/in/erik-bandeira-6aa355246)
 
----
+
 
 ✨ Explorando o futuro com tecnologia e criatividade! 🚀
 
