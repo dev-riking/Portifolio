@@ -9,7 +9,8 @@
 ## 🚀 Sobre mim
 - 🌱 **Atualmente aprendendo:**
   - **C para sistemas embarcados**
-  - Melhorando habilidades em **Java, Javascript, Python e APIs web**
+  - Melhorando habilidades em **Java, JavaScript, Python, NodeJS e APIs web**
+  - Estudando sobre **Mobile**.
 - 📚 **Projetos práticos individuais JavaScript:**
   - 🎥 **Sistema de Cinema:** Gerenciamento de reservas e horários.
   - 🎮 **Emulador de Jogos:** Experiência retrô com interface moderna.
